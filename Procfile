@@ -1,0 +1,1 @@
+web: gunicorn codebakerzassignment.wsgi --log-file -
