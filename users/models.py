@@ -14,7 +14,7 @@ class CustomUser(auth_models.AbstractUser):
     email = models.EmailField(unique=True, primary_key=True)
     mobile = models.CharField(max_length=12)
     name = models.CharField(max_length=25)
-    DOB = models.DateField()
+    DOB = models.DateField(null =True, blank=True)
     profilepic = models.ImageField(upload_to=nameFile, blank=True) 
     bio = models.TextField(blank=True, null=True)
     location = models.CharField(max_length=200, blank=True, null=True)
